@@ -1,29 +1,41 @@
 body{
-	display:flexbox;
-}
-
-ul, li, a{
-	list-style: none;
-	text-decoration: none;
-	color:#848484;
+	max-width: 800px;
 }
 
 header{
 	color:#FA8258;
 	text-decoration: bold;
-	font-family: "IBM Plex Mono", monospace;
+	font-family: "Indie Flower", cursive;
+	margin: 0px;
+	padding: 0px;
 }
-.submenu{
-	color: #848484;
-	background-color:#ffff;
+ul, li, a{
+	list-style: none;
 	text-decoration: none;
+	background-color:#ffff;
+	font-family: "IBM Plex Mono", monospace;
+	color: #848484;
+	display: inline-block;
 }
-
-.home{
+li a.home{
 	color:#FA8258;
-
 }
 
-a{
-	display: flex;
+.menu >li{
+	margin: 0 auto;
+	width: 50%;
 }
+
+.submenu{
+	display: none;
+	background-color:#F2F2F2; 
+	font-family: "IBM Plex Mono", monospace;
+	color: #848484;
+	padding: 15px 10px;
+}
+a.listmenu:hover{
+	font-family: "IBM Plex Mono", monospace;
+	color:#FA8258;
+}
+
+
