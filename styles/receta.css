@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/*---------------------------------------------------------Titulo-------------------------------------------------------------------*/
+.titulo{
+    margin: 10px;
+    font-size: 90px; /* tamaño de fuente*/
+    text-align: center;
+    color:#FA8258;
+    font-family: "Indie Flower", cursive;
+
+}
+
+
+
+/*---------------------------------------------------------Menu--------------------------------------------------------------------*/
+.navbar{
+    display: block;
+    width: 1000px;
+    margin: 10px auto;
+    background: #fff; /* Aca le damos un fondo para ver que bloque estamos trabajando*/
+
+}
+/* le damos efecto al pasar con el mouse (hover), seleccionamos la clase y luego las etiquetas "li" "a"*/
+.navbar li a:hover{
+    color:#FA8258;
+    transition: all .5s;
+}
+.menu > li{             /* seleccionamos solo los li de menu para trabajarlos, con > seleccionamos a los hijos del padre*/    
+    display: inline-block; /* centramos el menu*/ 
+}
+.home{
+    display: inline-block; /* lo trato como bloque*/
+    font-size: 100%; /* tamaño de fuente*/
+    color:#FA8258; /* le doy color*/
+    font-family: "IBM Plex Mono", monospace; /* asigno la fuente*/
+    text-decoration: none; /* quita el subrayado y el resto*/
+
+}
+
+/* Ahora le damos estilo a las letras del menu*/
+    .menu > li > a{
+    display: block; /* lo trato como bloque*/
+    font-size: 200%; /* tamaño de fuente*/
+    padding: 30px 50px; /* Comentarios*/
+    color: #444; /* le doy color*/
+    font-family: "IBM Plex Mono", monospace; /* asigno la fuente*/
+    text-decoration: none; /* quita el subrayado y el resto*/
+}
+
+/*--------------------------------------------------------Submenu-----------------------------------------------------------------*/
+
+.submenu{
+    Position: absolute;
+    list-style: none; /* quita el subrayado y el resto*/
+    margin: 0px;
+    display: none;/* Ocultamos el menu por defecto*/
+    }
+.submenu li a{
+display: block;
+font-size: 200%;
+padding: 10px 30px;
+font-family: "IBM Plex Mono", monospace;/* asigno la fuente*/
+text-decoration: none; /* quita el subrayado y el resto*/
+color: #444; /* le doy color*/
+background: #fff;
+width: 250px;
+
+
+}
+/* mostramos el submenu cuando pasamos con el mouse por encima*/
+.menu li:hover .submenu{
+    display: block;
+    transition: .4s;
+}
+/*--------------------------------------------------------banner-----------------------------------------------------------------*/
+.banner{
+    position: relative;
+}
+.bannerlist li{
+    position: absolute;
+    float: left;
+    margin: 30px 30px 30px 23px;
+    padding: 0px;
+}
+.material-icons{
+    float: left;
+    margin: 0px 5px 5px 0px;
+    padding: 0px;
+}
+p{  
+    color: #848484;
+}

@@ -3,73 +3,111 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="styles/styles.css" rel="stylesheet" type="text/css">  
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet"> 
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
-    <link href="https://fontawesome.com/icons?d=gallery" rel="stylesheet">
+<link href=" https://fontawesome.com/icons?d=gallery" type="icons" rel="stylesheet">
 <title>First TP Recepies</title>
 </head>
-<header>
-    <h1>Mi blog de Cocina</h1>
-</header>
 <body>
-    <nav class="menu">
+    <header class="titulo">Mi Blog de Cocina</header>
+    <nav class="navbar">
         <ul>
-            <li><a href="#" class="home">Home</a></li>
-            <li><a href="#" class="listmenu">Platos</a>
+            <li class= "home"><a href="index.html">HOME</a></li>
+            <li><a href="listmenu">PLATOS ▾</a>
                 <ul class="submenu">
-                    <li><a href="receta.html">Ensalada</a></li>
-                    <li><a href="#">Carne</a></li>
-                    <li><a href="#">Helado</a></li>
+                    <li><a href="receta.html">ENSALADAS</a></li>
+                    <li><a href="#">CARNE</a></li>
+                    <li><a href="#">HELADOS</a></li>             
                 </ul>
             </li>
-            <li></li><a href="#">Sobre Mi</a></li>
-            <li></li><a href="#">Contacto</a></li>
+            <li><a href="#">SOBRE MI</a></li>
+            <li><a href="#">CONTACTO</a></li>
         </ul>
-     </nav>    
-    <div class="largepicture">
-        <img src="images/img-1.jpg">    
-        <img src="images/img-2.jpg">
-        <img src="images/img-3.jpg">
-        <img src="images/img-4.jpg">
+    </nav>
+    <div class="carrousel">
+        <ul>
+            <li><img src="images/img-1.jpg"></li>  
+            <li><img src="images/img-2.jpg"></li>
+            <li><img src="images/img-3.jpg"></li>
+            <li><img src="images/img-4.jpg"></li>
+        </ul> 
+        <div class="commentary">
+            <ul>
+                <li>
+                    <p class="date">Diciembre 23, 2017 | 21 comentarios</p>
+                    <p class="message">"Unas tostadas sabrosas para arrancar bien el dia"</p>
+                </li>
+            </ul>
+        </div>
     </div>
-    <div class="commentary">
-        <p>Diciembre 23, 2017</p>
-        <p>21 comentarios</p>
-        <h5>"Unas tostadas sabrosas para arrancar bien el dia"</h5>  
-    </div>       
-    <section class="white">
-        <div class="smallpicture">
-            <img src="images/platos.jpeg"></li>
-            <img src="images/recetas.JPG"></li> 
-            <div class="menulinks">
-                <ul class=submenu>
-                    <li><a href="Platos"></a></li>
-                    <li><a href="Recetas"></a></li>
-                    <li><a href="Exoticos"></a></li>                       
-                </ul>
-            </div> 
+    
+    <section class=first-container>
+        <div class="white">
+            <div class="smallpicture">
+                <img src="images/platos.jpeg">
+                <img src="images/recetas.JPG">
+            </div>
+        </div>
+        <div class="menulinks">
+            <ul class=menuhovers>
+                <li><a href="Platos"></a></li>
+                <li><a href="Recetas"></a></li>
+                <li><a href="Exoticos"></a></li>                       
+            </ul>
         </div> 
     </section>
-
-    <div class="video">
-        <a href="https://www.youtube.com/watch?v=u00BeYiUvPw"></a>
-    </div>
-    <div class="subtitle">
-        <h6>>20 de abril</p>
-        <h6>¿Como preparar las mejores hamburguesas</p>
-    
-
-        <div>
-
+    <section class="second-container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/u00BeYiUvPw" frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      
+        <div class="subtitle">
+            <p>>20 de abril | ¿Como preparar las mejores hamburguesas</p>
+        </div>        
+        <div class:"avatar-banner">
+            <ul>
+                <li><a href="#">SOBRE MI</a></li>
+                <li><a href="#">NEWSLATTER</a></li> 
+            </ul>
+            <h3>Natalia Guida</h3>
+            <p>Tengo 23 años, hace dos que estudio
+                  cocina y soy fanatica de la comida,
+                  espero que les guste mi contenido
+            </p>
+        </div>
+    </section>
+<section class="third-container">
+    <div><img src="images/nota1.JPG">
+        <p>By Maria | Mayo 29, 2017</p>
+        <h3>DELICIAS DULCES</h3>
+        <p>En este articulo van a poder ver una receta muy
+        simple, sana y muy rica!
+        </p>
+        <ul>
+            <i class="fal fa-heart"></i>
+            <i class="fal fa-comments"></i> 
+            <i class="fas fa-share-alt"></i> 
+        </ul>
+    </div>
+</section>
+<section class="fourth-container">
+    <div class="second-recepie"><img src="images/nota2.JPG"></div>
+</section>
 
-
-    
+   
 </body>
-
+<footer>
+    <ul class:"socialnetwork">
+        <li><i class="fab fa-facebook-square"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-google-plus-g"></i></li>
+        <li><i class="fab fa-linkedin"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+        <li><i class="fab fa-youtube"></i></li>
+    </ul>
+</footer>
+    
 
 </html>
