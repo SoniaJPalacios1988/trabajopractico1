@@ -1,41 +1,142 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+box-sizing: border-box;
+}
 body{
-	max-width: 800px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	margin:0 auto;
 }
-
-header{
-	color:#FA8258;
-	text-decoration: bold;
+.titulo{
+	margin: 10;
+	padding: 3px;
+    text-align: center;
+    color: #FA8258;
+	font-size: 80px;
 	font-family: "Indie Flower", cursive;
-	margin: 0px;
-	padding: 0px;
 }
-ul, li, a{
-	list-style: none;
+.navbar{
 	text-decoration: none;
-	background-color:#ffff;
-	font-family: "IBM Plex Mono", monospace;
-	color: #848484;
-	display: inline-block;
+	display:flex;
+	flex-direction: row; 
+	font-family:"IBM Plex Mono", monospace;
+	font-size:100%;
+	height: 50px;
 }
-li a.home{
-	color:#FA8258;
+.navbar ul li a{
+display: inline;
 }
-
-.menu >li{
-	margin: 0 auto;
-	width: 50%;
-}
-
 .submenu{
 	display: none;
-	background-color:#F2F2F2; 
-	font-family: "IBM Plex Mono", monospace;
-	color: #848484;
-	padding: 15px 10px;
 }
-a.listmenu:hover{
-	font-family: "IBM Plex Mono", monospace;
-	color:#FA8258;
+.flex-container{
+	display:flex;
+	padding: 0px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	flex-basis: 1000px;
 }
+.flex-container div{
+	height: 420px;
+	width: 100%;
+	margin: 7px;
+}
+.flex-container div img{
+	height: 420px;
+	width: 100%;
+	margin: 7px;
+	margin-left: 0;
+	bottom: 0px;
+	left:2px;
+	background-size: cover;
+}
+.commentary{ 
+	display: inline-block;
+	color: #FFFF; 
+	max-width: 30%;
+	margin: 0;
+	padding:0;
+	min-height: 25%
+ }
+ .commentary p{
+	 margin: 0;
+	 padding: 0;
+	 background-color: RGBA(255,0,0,0.2);
+	 background-size: 0% 
+	 
+ }
+ .commentary .date p{
+	 font-size: x-small;
 
+ }
+ .commentary .message p{
+	font-style: solid;
+	top: 10px;
 
+}
+.white{
+	display:flex;
+	flex-basis: auto;
+	width: 100%;
+	height: 190px;
+}
+.smallpicture div img{
+	border-radius: 15px 15px 15px 15px;
+	border-bottom-color: #FFFF; 
+	width: 40%;
+	height: 100%;
+	background-size: cover;
+}
+.image5{
+	position: absolute;
+	margin-left:10%;
+}
+.image6{
+	position: relative;
+	bottom: 0px;
+	left: 350px;
+}
+ .menulinks{
+	 display: inline-block;
+	 list-style: none;
+	 text-decoration: none;
+	 color: #000000;
+    border: 1px solid #000000;
+	margin-right: 4px;
+	align-content: center;
+	bottom:50px;
+ }
+ .video{
+	position: relative;
+	margin-left: 120px;
+	margin-top: 15px;
+
+ }
+ .image7 .image8 .smallpicture{
+	border-radius: 15px 15px 15px 15px;
+	width: 10%;
+	height: 50px;
+	background-size: cover;
+ }
+ .image7 div{
+	 position:absolute;
+ }
+ .image8 div{
+	position:relative;
+}
