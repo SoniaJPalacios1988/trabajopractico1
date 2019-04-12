@@ -28,7 +28,7 @@ body{
 p{
 	font-family:"IBM Plex Mono", monospace;
 	font-size: small;
-	color:#c3c3c3; 
+	color:#9b9b9b;
 }
 .titulo{
 	margin: 10;
@@ -40,44 +40,47 @@ p{
 }
 nav{
 	background-color: #FFFF;
-	height:60px;
-	width:100%
-	padding:0;
-	margin:0;
-	font-family:"IBM Plex Mono", monospace;
-	box-sizing:border-box;
-	font-size:150%;
-	align-items: center;
+	width: 500px;
+	padding: 0;
+	margin: auto;
+	font-family: "IBM Plex Mono", monospace;
+	box-sizing: border-box;
+	font-size: 150%;
 }
 .navbar ul{
-	display: flex;
-	list-style: none;
+	background-color: aqua;
+	display: block;
+	width: 100%;
+	list-style:none;
+	padding: 10px 15px;
+	margin: 0;	
 }
 .navbar ul ul{
 	display: none;
 }
 .navbar a{
 	display:block;
-	padding: 20px 10px;
-	margin-left:20px auto;
 	text-decoration: none;
-	color: #c3c3c3;
+	color: #9b9b9b;
+	float:left;
+	margin-left:10px;
 }
-.navbar .home a{
+.home a{
 	color: #FA8258;
 	transition: all .5s;
 }
-.navbar .listmenu  a:hover{
-	transition: all .5s;
+.listmenu li ul nav{
+	position: absolute;
+	min-width:25%;
+}
+.navbar ul:hover> ul{
 	display:block;
-	background-color:#FA8258;
 }
 .carrousel{
 	width:100%;
 	margin:0;
 	overflow: hidden;
-	border:solid;
-	border-color: black;
+	border-color: #000000 solid 1px;
 }
 .carrousel ul{
 	margin:0;
@@ -98,12 +101,14 @@ nav{
 .carrousel div{
 	display:flex;
 	flex-flow: row-reverse; 
-	position:relative;
+	position:absolute;
 }
 .commentary div{
+	position:relative;
 	margin:0;
-	position:absolute;
-	bottom:20px;
+	bottom:150px;
+	transition: transform 0.3s;
+	transform: translate(50px, 20px);
 }
 .commentary ul{
 	padding:0;
@@ -120,65 +125,66 @@ nav{
 	display:flex;
 }
 .first-container{
-	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	height: 200px;
+	width: 90%;
 	padding:0;
+	margin:0;
 	font-family:"IBM Plex Mono", monospace;
 	box-sizing:border-box;
 	font-size: 100%;
 	align-items: center;	
-	margin-left: 120px;
-	margin-top: 15px;
+	margin-top:0.5%;
+	margin-left: 10%;
 	border:solid;
 	border-color: black;
 }
-.white .smallpicture img{
+.first-container .smallpicture img{
 	border-radius: 15px 15px 15px 15px;
-	border-bottom-color: #FFFF; 
+	border-bottom-color: #000000; 
+	box-sizing:border-box;
 	width: 30%;
 	height: 100%;
+	margin: 0 10px 0 10px;
 	background-size: cover;
-	margin-top:1%;
-	margin-left: 0.5%;
-	top:0.5%;
 }
-.first-container .menulinks div{
+.first-container div{
 	display:flex;
-	height: 60px;
+	height: 150px;
 	padding:0;
 	margin:0;
+	overflow:hidden;
 	box-sizing:border-box;
 	font-size: 100%;
-	align-items: center;
  }
- .menulinks div a{
+ .white div a{
+	background-color: aqua;
+	align-items: right;
+	display:block;
 	font-family:"IBM Plex Mono", monospace;
-	justify-items: center;
-	justify-content:center;
+	color: #000000;
+	box-sizing:border-box;
+	width:10%;
+	border-radius: 15px 15px 15px 15px;
+	border-color: #000000 solid 1px; 
 	list-style: none;
 	text-decoration: none;
-	box-sizing:border-box;
-	border-radius: 15px 15px 15px 15px;
-	border: 1px solid #000000;
-	padding: 20px 10px;
-	margin-left:20px;
-	width:10%;
+	float:right;
  }
-.linkone, .linktwo a{
-	background-color: #FFFF;
-	color: #000000;
-	font-family:"IBM Plex Mono", monospace;
- }
-.linkthird{
-	background-color:#FA8258;
-	color: #000000;
-	font-family:"IBM Plex Mono", monospace;
+.linkone, .linktwo .linkthird{
+
 }
  .video{
 	position: relative;
 	margin-left: 120px;
 	margin-top: 15px;
-
  }
+.avatar-banner .avatar img{
+	 height: 20%;
+	 widows: 40%;
+	 border-radius: 10px 10px 10px 10px; 
+ } 
  img .third-container .fourth-container{
 	border-radius: 15px 15px 15px 15px;
 	border-bottom-color: #FFFF; 
