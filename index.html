@@ -5,95 +5,126 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link href="styles/styles.css" rel="stylesheet" type="text/css">  
-<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-<link href=" https://fontawesome.com/icons?d=gallery" type="icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link href="https://fontawesome.com/icons?d=gallery" rel="stylesheet">
 <title>First TP Recepies</title>
 </head>
-<header class="titulo">Mi Blog de Cocina</header>
+<div class="container">
+    <header class= "titulo">Mi Blog de Cocina</header>
 <body>
-    <nav class="navbar">
-        <ul class="menu">
-            <li class= "home"><a href="index.html">HOME</a></li>
-            <li><a href="listmenu">PLATOS ▾</a>
+      <nav class="navbar">
+         <ul class="menu">
+            <li class= "home"><a href="#">HOME</a></li>
+            <li><a href="#">PLATOS ▾</a>
                 <ul class="submenu">
-                    <li><a href="receta.html">ENSALADAS</a></li>
-                    <li><a href="#">CARNE</a></li>
-                    <li><a href="#">HELADOS</a></li>             
+                  <li><a href="receta.html">Ensaladas</a></li>
+                  <li><a href="#">Carne</a></li>
+                  <li><a href="#">Helados</a></li>
                 </ul>
             </li>
             <li><a href="#">SOBRE MI</a></li>
             <li><a href="#">CONTACTO</a></li>
-        </ul>
-    </nav>
-    <div class="flex-container">
-        <div class="image1"><img src="images/img-1.jpg"></div>    
-        <div class="image2"><img src="images/img-2.jpg"></div>
-        <div class="image3"><img src="images/img-3.jpg"></div>
-        <div class="image4"><img src="images/img-4.jpg"></div>
-    </div>
-    <div class="commentary">
-            <p class="date">Diciembre 23, 2017 | 21 comentarios</p>
-            <p class="message">"Unas tostadas sabrosas para arrancar bien el dia"</p>  
-    </div>  
-    <div class="white">
-        <div class="smallpicture">
-            <div class="image5"><img src="images/platos.jpeg"></div>
-            <div class="image6"><img src="images/recetas.JPG"></div>
-        </div>
-    </div>
-    <div class="menulinks">
-        <ul class=menuhovers>
-            <li><a href="Platos"></a></li>
-            <li><a href="Recetas"></a></li>
-            <li><a href="Exoticos"></a></li>                       
-        </ul>
-    </div> 
-    <section>
-        <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/u00BeYiUvPw" frameborder="0" 
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="subtitle">
-            <h6>>20 de abril | ¿Como preparar las mejores hamburguesas</h6>
-            
-        </div>        
-        <div class:"avatar-banner">
+          </ul>
+      </nav>
+      <div class="carrousel">
             <ul>
-                <li><a href="#">SOBRE MI</a></li>
-                <li><a href="#">NEWSLATTER</a></li> 
-            </ul>
-            <h3>Natalia Guida</h3>
-            <span>Tengo 23 años, hace dos que estudio
-                  cocina y soy fanatica de la comida,
-                  espero que les guste mi contenido
-            </span>
+                <li><img src="images/img-1.jpg"></li>  
+                <li><img src="images/img-2.jpg"></li>
+                <li><img src="images/img-3.jpg"></li>
+                <li><img src="images/img-4.jpg"></li>
+            </ul> 
         </div>
-</section>
-<div class="image7"><img src="images/nota1.JPG">
-    <p>By Maria | Mayo 29, 2017</p>
-    <h3>DELICIAS DULCES</h3>
-    <p>En este articulo van a poder ver una receta muy
-       simple, sana y muy rica!
-    </p>
-    <ul>
-        <i class="fal fa-heart"></i>
-        <i class="fal fa-comments"></i> 
-        <i class="fas fa-share-alt"></i> 
-    </ul>
-</div>
-<div class="image8"><img src="images/nota2.JPG"></div>
-   
-</body>
+        <div class="commentary">
+            <ul>
+                <li>
+                    <p class="date">Diciembre 23, 2017 | 21 comentarios</p>
+                    <p class="message">"Unas tostadas sabrosas para arrancar bien el dia"</p>
+                </li>
+            </ul>
+        </div>
+        <section class=first-container>
+            <div class="white">
+                <div class="smallpicture">
+                    <img src="images/platos.jpeg">
+                    <img src="images/recetas.JPG">
+                    <a href="linkone">PLATOS</a>
+                    <a href="linktwo">RECETAS</a>
+                    <a href="linkthird">EXOTICOS</a>
+                </div> 
+            </div>
+        </section>
+        <section class="second-container">
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/u00BeYiUvPw" frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>20 de abril | ¿Como preparar las mejores hamburguesas</p>
+            </div>
+            <div class="avatar-banner">
+                    <ul>
+                        <li><a href="#">SOBRE MI</a></li> 
+                    </ul>
+                    <img class="avatar" src="images/capitanamarvel.jpg">
+                    <h2>Carol Danvers</h2>
+                    <p>Tengo 23 años, hace dos que estudio
+                       cocina y soy fanatica de la comida,
+                       espero que les guste mi contenido
+                    </p>
+                    <ul>
+                        <li><a href="#">NEWSLATTER</a></li> 
+                    </ul>
+            </div>
+        </section>            
+        
+        <section class="third-container">
+            <div class="third"><img src="images/nota1.JPG"></div>
+            <div class="message">
+                <p>By Maria | Mayo 29, 2017</p>
+                <h3>DELICIAS DULCES</h3>
+                <p>En este articulo van a poder ver una receta muy
+                simple, sana y muy rica!
+                </p>
+                <ul>
+                    <i class="fal fa-heart"></i>
+                    <i class="fal fa-comments"></i> 
+                    <i class="fas fa-share-alt"></i> 
+                </ul>
+                <ul>
+                    <li><a href="#">LEER MAS</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="fourth-container">
+            <div class="fourth"><img src="images/nota2.JPG"></div>
+            <div class="message">
+                <p>By Maria | Mayo 29, 2017</p>
+                <h3>COMIDAS SIMPLES</h3>
+                <p>En este articulo van a poder ver una receta muy
+                simple, sana y muy rica!
+                </p>
+                <ul>
+                    <i class="fal fa-heart"></i>
+                    <i class="fal fa-comments"></i> 
+                    <i class="fas fa-share-alt"></i> 
+                </ul>
+                <ul>
+                    <li><a href="#">LEER MAS</a></li>
+                </ul>
+            </div>
+        </section>
+</body>   
 <footer>
-    <ul class:"socialnetwork">
-        <li><i class="fab fa-facebook-square"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-google-plus-g"></i></li>
-        <li><i class="fab fa-linkedin"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
-        <li><i class="fab fa-youtube"></i></li>
-    </ul>
+    <div class="social_content">
+        <div class="socialnetworks">
+            <ul class="social_links">
+                <li><a href="http://www.facebook.com//CocinerosArgentinos" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=40 height=40/></a></li>
+                <li><a href="http://twitter.com/cocinerosarg" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=40 height=40 alt="Síguenos en Twitter" /></a></li>
+                <li><a rel="author" href="https://plus.google.com/TU_ID_GOOGLE?rel=author" target="_blank"><img alt="Siguenos en Google+" src="https://lh5.googleusercontent.com/-F_FBKktZWZk/T3nN0v4FeAI/AAAAAAAAAsc/7dHTxkxn4cI/s32/google32.png" width=40 height=40/></a></li>
+                <li><a href="https://www.instagram.com/cocinerosarg/" target="_blank"><img alt="Siguenos en Blogger" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=40 height=40/></a></li>
+                <li><a href="https://ar.pinterest.com/CocinerosArgentinos/" target="_blank"><img alt="Siguenos en Pinterest" src="https://lh6.googleusercontent.com/-zlT-cpS5aIE/T73l-U2HzHI/AAAAAAAAA5k/Y6plORusOXM/s128/pinterest32.png" width=40 height=40/></a></li>
+                </ul>
+            </div>
 </footer>
     
 
