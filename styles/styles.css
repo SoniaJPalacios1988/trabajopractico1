@@ -47,8 +47,7 @@ nav{
 	box-sizing: border-box;
 	font-size: 150%;
 }
-.navbar ul{
-	background-color: aqua;
+.navbar{
 	display: block;
 	width: 100%;
 	list-style:none;
